@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Signup + Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrap">
+
+    <header class="masthead">
+      <span class="tag">01</span>
+      <h1>Create an account</h1>
+      <p class="sub">Passwords are hashed client-side (SHA-256) before they ever touch storage.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="form-heading">
+      <h2 id="form-heading" class="visually-hidden">Signup form</h2>
+
+      <form id="signup-form" novalidate>
+
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" />
+          <p class="error" id="err-username" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" autocomplete="email" />
+          <p class="error" id="err-email" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" />
+          <p class="hint">At least 6 characters. Stored as a hash, never in plain text.</p>
+          <p class="error" id="err-password" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn-primary">Sign up</button>
+        <p class="form-status" id="form-status" role="status"></p>
+
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="dash-heading">
+      <div class="panel-head">
+        <h2 id="dash-heading">Dashboard</h2>
+        <span class="count" id="user-count">0 accounts</span>
+      </div>
+
+      <div class="table-scroll">
+        <table id="user-table">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Password (hashed)</th>
+              <th class="col-action"></th>
+            </tr>
+          </thead>
+          <tbody id="user-table-body">
+            <!-- rows injected by script.js -->
+          </tbody>
+        </table>
+        <p class="empty-state" id="empty-state">No accounts yet — sign up above to see one appear here.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
