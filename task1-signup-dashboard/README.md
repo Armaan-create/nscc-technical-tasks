@@ -2,6 +2,10 @@
 
 A small client-side web app: sign up with a username, email and password, and see every account that's signed up in a live dashboard table.
 
+## Live demo
+
+🔗 [View deployed page](https://armaan-create.github.io/nscc-technical-tasks/task1-signup-dashboard/)
+
 ## How to run it
 
 No build step, no server, no dependencies.
