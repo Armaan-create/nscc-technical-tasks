@@ -2,6 +2,10 @@
 
 A responsive one-page personal introduction, styled as a series of terminal windows — fitting for someone who builds things for a living.
 
+## Live demo
+
+🔗 [View deployed page](https://armaan-create.github.io/nscc-technical-tasks/task2-personal-intro/)
+
 ## How to run it
 
 No build step, no dependencies.
